@@ -15,7 +15,7 @@ public class IsolatedRuntimeHost : IDisposable
         var hostBinariesDir = Path.Combine(
             AppContext.BaseDirectory,
             "IsolatedRuntimeHost");
-        _modulePath = Path.Combine(hostBinariesDir, "DotNetIsolator.WasmApp.wasm");
+        _modulePath = Path.Combine(hostBinariesDir, /*"DotNetIsolator.WasmApp.wasm"*/"dotnet.wasm");
         _wasmBclDir = Path.Combine(hostBinariesDir, "WasmAssemblies");
     }
 
